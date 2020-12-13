@@ -1,0 +1,24 @@
+{
+    "name": "tolkam/storage",
+    "description": "File storage abstraction with filename-based paths support",
+    "type": "library",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Tolkam\\Storage\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-mbstring": "*",
+        "league/flysystem": "^1.0",
+        "tolkam/uri-generator": "^1.0@dev"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
