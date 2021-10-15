@@ -99,5 +99,5 @@ interface StorageInterface
      *
      * @return bool
      */
-    public function deleteAll(string ...$filenames);
+    public function deleteAll(string ...$filenames): bool;
 }

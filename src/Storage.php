@@ -22,8 +22,10 @@ class Storage implements StorageInterface
      * @param FilesystemInterface   $filesystem
      * @param UriGeneratorInterface $uriGenerator
      */
-    public function __construct(FilesystemInterface $filesystem, UriGeneratorInterface $uriGenerator)
-    {
+    public function __construct(
+        FilesystemInterface $filesystem,
+        UriGeneratorInterface $uriGenerator
+    ) {
         $this->filesystem = $filesystem;
         $this->uriGenerator = $uriGenerator;
     }
@@ -153,7 +155,7 @@ class Storage implements StorageInterface
     /**
      * @inheritDoc
      */
-    public function deleteAll(string ...$filenames)
+    public function deleteAll(string ...$filenames): bool
     {
         $left = count($filenames);
         
